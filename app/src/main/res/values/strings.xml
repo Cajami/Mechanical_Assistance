@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CursoAndroid</string>
+
+    <string name="NameEmpresa">MiEmpresa</string>
+    <string name="login_botonLogin">LOGIN</string>
+    <string name="main_mi_perfil">Mi Perfil</string>
+    <string name="main_gps">GPS</string>
+    <string name="main_asistencia_mec_nica">Asistencia Mecánica</string>
+    <string name="main_mis_mensajes">Mis Mensajes</string>
+    <string name="main_notificaciones">Notificaciones</string>
+    <string name="main_favoritos">Favoritos</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
