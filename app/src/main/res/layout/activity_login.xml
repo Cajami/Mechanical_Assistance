@@ -4,68 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintStart_toEndOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    >
+    tools:context=".Activity.LoginActivity">
 
 
     <TextView
         android:id="@+id/lblLogin_Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/NameEmpresa"
         android:gravity="center"
+        android:text="@string/NameEmpresa"
         android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@id/logoImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
 
         />
 
     <ImageView
+        android:id="@+id/logoImageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="100dp"
+
         />
 
     <LinearLayout
+        android:id="@+id/loginusuario_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:orientation="horizontal">
+        android:layout_marginStart="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoImageView">
 
         <ImageView
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_account_circle_black_24dp"/>
+            android:src="@drawable/ic_account_circle_black_24dp" />
 
         <EditText
             android:id="@+id/txtUser_LoginActivity"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="User"
-            />
+            android:hint="User" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/loginclave_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:orientation="horizontal">
+        android:layout_marginStart="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginusuario_layout">
 
         <ImageView
             android:layout_width="60dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_vpn_key_black_24dp"/>
+            android:src="@drawable/ic_vpn_key_black_24dp" />
 
         <EditText
             android:id="@+id/txtPassword_LoginActivity"
@@ -73,16 +79,33 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Password"
-            />
+            android:inputType="textPassword"/>
     </LinearLayout>
 
     <Button
         android:id="@+id/btnLogin_LoginActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login_botonLogin"
         android:layout_gravity="center"
-        android:layout_marginTop="15dp"/>
-</LinearLayout>
+        android:layout_marginTop="15dp"
+        android:text="@string/login_botonLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginclave_layout" />
+
+    <TextView
+        android:id="@+id/registrarse_login"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/registrarse_login"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
 
 </android.support.constraint.ConstraintLayout>

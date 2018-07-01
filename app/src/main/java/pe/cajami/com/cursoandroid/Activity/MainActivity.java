@@ -1,4 +1,4 @@
-package pe.cajami.com.cursoandroid;
+package pe.cajami.com.cursoandroid.Activity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Toast;
+
+import pe.cajami.com.cursoandroid.R;
 
 public class MainActivity extends AppCompatActivity {
 
