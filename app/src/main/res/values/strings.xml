@@ -11,4 +11,10 @@
     <string name="main_favoritos">Favoritos</string>
     <string name="title_activity_maps">Map</string>
     <string name="registrarse_login">Registrarse</string>
+    <string name="tipo_usuario_register">Tipo Usuario:</string>
+    <string name="tipo_documento_register">Tipo Documento:</string>
+    <string name="nro_documento_register">Nro Documento:</string>
+    <string name="usuario_register">Usuario:</string>
+    <string name="contrasenia_register">Contraseña:</string>
+    <string name="registrar_register">Registrar</string>
 </resources>
